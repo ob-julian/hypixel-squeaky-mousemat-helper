@@ -9,6 +9,7 @@ import net.minecraft.client.render.RenderTickCounter
 import net.minecraft.component.DataComponentTypes
 import net.minecraft.component.type.LoreComponent
 import net.minecraft.item.ItemStack
+import net.minecraft.item.Items
 import net.minecraft.nbt.NbtCompound
 
 object HotbarHighlightRenderer {
@@ -18,6 +19,7 @@ object HotbarHighlightRenderer {
 
     fun drawHotbarHighlight(context: DrawContext, tickDelta: RenderTickCounter) {
         val client = MinecraftClient.getInstance()
+        // Only render if the player is in-game
         val player = client.player ?: return
 
         for (slot in 0 until hotbarSize) {
@@ -27,7 +29,7 @@ object HotbarHighlightRenderer {
             if (stack.isEmpty) continue
 
             // Highlight player heads
-            if (stack.item.name.string == "Player Head") {
+            if (stack.isOf(Items.PLAYER_HEAD)) {
                 val nbt: NbtCompound = stack.get(DataComponentTypes.CUSTOM_DATA)?.copyNbt() ?: continue
                 if (nbt.getString("id").orElse("") == "SQUEAKY_MOUSEMAT") {
                     val lore: LoreComponent = stack.get(DataComponentTypes.LORE) ?: continue
