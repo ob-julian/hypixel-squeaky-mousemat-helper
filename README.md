@@ -18,6 +18,7 @@ Switching between them can be annoying because it’s easy to forget which Mouse
 
 This mod solves that by giving immediate visual feedback directly in your hotbar. Instead of guessing, you can glance at the highlighted slots and instantly know which Mousemat best matches your current facing direction.
 
+>Note: This mod just draws a colored overlay on where the math says the Hotbar slot should be. So if you have a resource pack/mod that changes the hotbar position, it will not work correctly. But it should work with most default and common resource packs.
 
 ## Features
 
