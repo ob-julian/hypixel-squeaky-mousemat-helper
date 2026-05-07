@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "hypixel-squeaky-mousemat-helper",
+	"version": "${version}",
+	"name": "Hypixel Squeaky Mousemat Helper",
+	"description": "Highlights the squeaky mousemat what most matches your current orientation in Hypixel Skyblock.",
+	"authors": [
+		"Julian"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hypixel-squeaky-mousemat-helper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			{
+				"value": "julian.mousemat.HypixelSqueakyMousematHelper",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
