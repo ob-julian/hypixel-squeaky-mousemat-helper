@@ -65,3 +65,6 @@ To run the Minecraft client with the mod for testing, use:
 
 This project is released under the CC0 1.0 Universal license. See LICENSE for details.
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes and updates.

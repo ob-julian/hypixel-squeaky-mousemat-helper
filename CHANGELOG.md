@@ -1,0 +1,8 @@
+## Changelog
+
+
+### [1.0.0]
+- Added color-coded hotbar highlighting for Squeaky Mousemats
+- Implemented angle calculation based on player rotation
+- Added support for parsing yaw and pitch from item lore
+- Added support for multiple Mousemats in the hotbar
