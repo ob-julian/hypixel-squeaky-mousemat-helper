@@ -3,17 +3,16 @@
 	"id": "hypixel-squeaky-mousemat-helper",
 	"version": "${version}",
 	"name": "Hypixel Squeaky Mousemat Helper",
-	"description": "Highlights the squeaky mousemat what most matches your current orientation in Hypixel Skyblock.",
+	"description": "A Hypixel SkyBlock QoL mod that color-codes your hotbar Squeaky Mousemats from green to red based on how closely they match your current player rotation.",
 	"authors": [
 		"Julian"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/hypixel-squeaky-mousemat-helper/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"client": [
 			{
@@ -23,7 +22,7 @@
 		]
 	},
 	"depends": {
-		"fabricloader": ">=0.18.5",
+		"fabricloader": ">=0.18.0",
 		"minecraft": "~1.21.11",
 		"java": ">=21",
 		"fabric-api": "*",
