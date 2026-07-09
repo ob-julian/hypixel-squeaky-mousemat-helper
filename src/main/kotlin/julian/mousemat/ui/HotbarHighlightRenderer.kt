@@ -29,7 +29,7 @@ object HotbarHighlightRenderer {
             if (stack.isEmpty) continue
 
             // Highlight player heads
-            if (stack.isOf(Items.PLAYER_HEAD)) {
+            if (stack.isOf(Items.PAPER)) {
                 val nbt: NbtCompound = stack.get(DataComponentTypes.CUSTOM_DATA)?.copyNbt() ?: continue
                 if (nbt.getString("id").orElse("") == "SQUEAKY_MOUSEMAT") {
                     val lore: LoreComponent = stack.get(DataComponentTypes.LORE) ?: continue
