@@ -14,7 +14,9 @@ import net.minecraft.world.item.component.ItemLore
 
 object HotbarHighlightRenderer {
 
+    // defined in pixels, the size of each hotbar slot
     const val hotbarSlotSize = 20
+    // defined in slots, the number of slots in the hotbar
     const val hotbarSize = 9
 
     fun drawHotbarHighlight(context: GuiGraphicsExtractor, tickDelta: DeltaTracker) {
@@ -29,7 +31,7 @@ object HotbarHighlightRenderer {
             if (stack.isEmpty) continue
 
             // Highlight player heads
-            if (stack.`is`(Items.PLAYER_HEAD)) {
+            if (stack.`is`(Items.PAPER)) {
                 val nbt: CompoundTag = stack.get(DataComponents.CUSTOM_DATA)?.copyTag() ?: continue
                 if (nbt.getString("id").orElse("") == "SQUEAKY_MOUSEMAT") {
                     val lore: ItemLore = stack.get(DataComponents.LORE) ?: continue
