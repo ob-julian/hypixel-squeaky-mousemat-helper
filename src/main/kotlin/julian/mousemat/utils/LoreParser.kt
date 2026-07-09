@@ -1,10 +1,10 @@
 package julian.mousemat.utils
 
-import net.minecraft.component.type.LoreComponent
+import net.minecraft.world.item.component.ItemLore
 
 object LoreParser {
 
-    fun extractYawPitchFromLore(lore: LoreComponent): Pair<Float, Float>? {
+    fun extractYawPitchFromLore(lore: ItemLore): Pair<Float, Float>? {
         var yaw: Float? = null
         var pitch: Float? = null
 
