@@ -6,21 +6,21 @@ import org.junit.jupiter.api.Test
 import kotlin.math.PI
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
-import net.minecraft.component.type.LoreComponent
-import net.minecraft.text.Text
-import net.minecraft.util.Formatting
+import net.minecraft.world.item.component.ItemLore
+import net.minecraft.network.chat.Component
+import net.minecraft.ChatFormatting
 
 class HypixelSqueakyMousematHelperTest {
 
     @Test
     fun testExtractYawPitchFromLore() {
-        val yawLine = Text.empty()
-            .append(Text.literal("Selected Yaw: ").formatted(Formatting.GRAY))
-            .append(Text.literal("100.5").formatted(Formatting.GREEN))
-        val pitchLine = Text.empty()
-            .append(Text.literal("Selected Pitch: ").formatted(Formatting.GRAY))
-            .append(Text.literal("45.8").formatted(Formatting.GREEN))
-        val lore = LoreComponent(listOf(yawLine, pitchLine))
+        val yawLine = Component.empty()
+            .append(Component.literal("Selected Yaw: ").withStyle(ChatFormatting.GRAY))
+            .append(Component.literal("100.5").withStyle(ChatFormatting.GREEN))
+        val pitchLine = Component.empty()
+            .append(Component.literal("Selected Pitch: ").withStyle(ChatFormatting.GRAY))
+            .append(Component.literal("45.8").withStyle(ChatFormatting.GREEN))
+        val lore = ItemLore(listOf(yawLine, pitchLine))
 
         val result = LoreParser.extractYawPitchFromLore(lore)
 

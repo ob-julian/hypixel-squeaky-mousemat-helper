@@ -28,7 +28,7 @@ This mod solves that by giving immediate visual feedback directly in your hotbar
 
 ## Installation
 
-1. Ensure you have Minecraft 1.21.1 and Fabric Loader installed.
+1. Ensure you have Minecraft 26.2, Fabric Loader, and Java 25+ installed.
 2. Download the mod JAR from the releases page (or build from source).
 3. Place the JAR file in your `.minecraft/mods` folder.
 4. Launch Minecraft with Fabric.
@@ -43,7 +43,7 @@ This mod solves that by giving immediate visual feedback directly in your hotbar
 
 ## Development
 
-For setup reference, just look at the [fabric docs](https://docs.fabricmc.net/1.21.11/develop/getting-started/setting-up).
+For setup reference, just look at the [Fabric docs](https://docs.fabricmc.net/develop/getting-started/setting-up).
 
 
 ### Running Tests
@@ -68,3 +68,9 @@ This project is released under the CC0 1.0 Universal license. See LICENSE for de
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes and updates.
+
+## Note
+There is also a version of this mod for MC 1.21.10.\
+To access it, check out the [legacy/1.21.10 branch](https://github.com/ob-julian/hypixel-squeaky-mousemat-helper/tree/legacy/1.21.10).
+> This branch is deprecated because Hypixel SkyBlock has transitioned to Minecraft Version 26.2 and no longer supports 1.21.10. \
+The 1.21.10 version of the mod will not receive any further updates or support.

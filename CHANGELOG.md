@@ -1,5 +1,7 @@
 ## Changelog
 
+### [1.1.0]
+- Ported to MC Version 26.2
 
 ### [1.0.0]
 - Added color-coded hotbar highlighting for Squeaky Mousemats
