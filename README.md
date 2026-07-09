@@ -70,7 +70,7 @@ This project is released under the CC0 1.0 Universal license. See LICENSE for de
 See [CHANGELOG.md](CHANGELOG.md) for a detailed list of changes and updates.
 
 ## Note
-There is also a version of this mod for MC 1.21.10.\
-To access it, check out the [legacy/1.21.10 branch](https://github.com/ob-julian/hypixel-squeaky-mousemat-helper/tree/legacy/1.21.10).
-> This branch is deprecated because Hypixel SkyBlock has transitioned to Minecraft Version 26.2 and no longer supports 1.21.10. \
-The 1.21.10 version of the mod will not receive any further updates or support.
+There is also a version of this mod for MC 1.21.1.\
+To access it, check out the [legacy/1.21.11 branch](https://github.com/ob-julian/hypixel-squeaky-mousemat-helper/tree/legacy/1.21.11).
+> This branch is deprecated because Hypixel SkyBlock has transitioned to Minecraft Version 26.2 and no longer supports 1.21.11. \
+The 1.21.11 version of the mod will not receive any further updates or support.
